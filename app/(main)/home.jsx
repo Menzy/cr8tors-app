@@ -114,15 +114,12 @@ const Home = () => {
         {/* header */}
         <View style={styles.header}>
           <Text style={styles.title}>
-            Cr8
+            Crea
             <Text
-              style={[
-                styles.footerText,
-                {
-                  color: theme.colors.primaryDark,
-                  fontWeight: theme.fonts.semiBold,
-                },
-              ]}
+              style={{
+                color: theme.colors.primaryDark,
+                fontWeight: theme.fonts.semiBold,
+              }}
             >
               tor
             </Text>

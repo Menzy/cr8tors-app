@@ -42,7 +42,8 @@ const NewPost = () => {
       bodyRef.current = post.body;
       setFile(post.file || null);
       setTimeout(() => {
-        editorRef.current?.setContentHTML(post.body);
+        inputRef.current?.setNativeProps({ text: post.body });
+        // editorRef.current?.setContentHTML(post.body);
       }, 300);
     }
   }, []);
@@ -155,7 +156,7 @@ const NewPost = () => {
               placeholderTextColor={theme.colors.textLight}
               containerStyle={{
                 flex: 1,
-                height: hp(6.2),
+                height: hp(15),
                 borderRadius: theme.radius.xl,
               }}
             />
